@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  laptop-management:
+    build: .
+    container_name: laptop-management-system
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
